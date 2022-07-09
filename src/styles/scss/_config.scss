@@ -1,0 +1,26 @@
+//colors
+$red: #FF725E;
+$light-red: #FFD4CE;
+$black: #2B3233;
+
+//defaults
+a{
+  text-decoration: none;
+  color: black;
+}
+  
+ul, li{
+  list-style: none;
+  padding: 0;
+}
+
+//mixins
+@mixin flex($justify, $align) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin padding{
+  padding: 0 3em;
+}

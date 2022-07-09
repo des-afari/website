@@ -11,3 +11,24 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* fonts */
+@font-face {
+  font-family: 'Inter-Regular';
+  src: url(../assets/font/Inter-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Inter-Bold';
+  src: url(../assets/font/Inter-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'Inter-Black';
+  src: url(../assets/font/Inter-Black.ttf);
+}
+
+@font-face {
+  font-family: 'Oswald';
+  src: url(../assets/font/Oswald.ttf);
+}

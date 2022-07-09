@@ -1,0 +1,41 @@
+@import './config';
+
+header{
+    @include flex(space-between, center);
+    @include padding;
+    background-color: $light-red;
+    height: 4em;
+
+    nav{
+        font-family: 'Oswald', sans-serif;
+        display: flex;
+
+        a{
+            margin: 0 1em;
+            font-size: .95rem;
+            transition: all 250ms ease;
+            cursor: pointer;
+
+            &:hover{
+                color: $red;
+            }            
+        }
+    }
+}
+
+.logo{
+    font-size: 14.5px;
+
+    p{
+        margin: 0;
+        line-height: .2em;
+    }
+    
+    small{
+        margin: 0;
+        font-family: 'Inter-Black', sans-serif;
+        color: $red;
+        letter-spacing: .42em;
+        font-size: .635rem;
+    }
+}

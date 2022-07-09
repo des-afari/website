@@ -1,0 +1,68 @@
+@import './config';
+
+.index__container{
+    min-height: 200vh;
+}
+
+.index__main{
+    height: calc(100vh - 4em);
+    background-color: $light-red;
+    @include padding;
+    display: grid;
+    grid-template-columns: 55% 45%;
+}
+
+.index__main__left{
+    @include flex(center, center);
+
+    h1{
+        font-family: "Oswald", 'Segoe UI', sans-serif;
+        font-size: 12.425vw;
+        line-height: 12.425vw;
+        letter-spacing: -0.75vw;
+        margin: 0;
+        text-shadow: 4px 4px $red;
+    }
+}
+
+.index__main__right{
+    @include flex(center, center);
+    flex-direction: column;
+
+    svg {
+      flex: 4;
+      width: 80%;
+    }
+
+    p {
+      flex: 1;
+    }
+}
+
+.index__side{
+    height: 100vh;
+    position: relative;
+    @include padding;
+}
+
+.index__side__main{
+    height: 100%;
+    @include flex(space-evenly, center);
+    column-gap: 2em;
+
+    div{
+        height: 50%;
+        display: grid;
+        grid-template-rows: 70% 10% 20%;
+        text-align: center;
+
+        svg{
+            height: fill;
+            width: fill;
+        }
+
+        h3{
+            font-family: 'Inter-Bold', sans-serif;
+        }
+    }
+}
